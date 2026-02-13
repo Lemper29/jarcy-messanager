@@ -21,7 +21,7 @@ func main() {
 	}
 	defer databasePostgres.Pool.Close()
 
-	repo := repository.NewRepo(databasePostgres)
+	repo := repository.NewRepo(databasePostgres.Queries)
 	authService := service.NewService(repo)
 
 	lis, err := net.Listen("tcp", ":"+cfg.PORT)

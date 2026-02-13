@@ -3,6 +3,7 @@ module github.com/Lemper29/Jarcy
 go 1.25.7
 
 require (
+	github.com/google/uuid v1.6.0
 	github.com/jackc/pgx/v5 v5.8.0
 	github.com/joho/godotenv v1.5.1
 	google.golang.org/grpc v1.78.0
